@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule (.*) https://robogyan.tech/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(/$|\.) 
+RewriteRule ^/?intel https://dataquest.ml/workshop-on-introduction-to-machine-learning/? [R=301,L]
+RewriteRule ^/?intel/ https://dataquest.ml/workshop-on-introduction-to-machine-learning/? [R=301,L]
+RewriteRule ^/?register https://forms.gle/DrrwbzneRaRKbamW9 [R=301,L]
+RewriteRule ^/?register/ https://forms.gle/DrrwbzneRaRKbamW9 [R=301,L]
+
+
