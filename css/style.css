@@ -1348,14 +1348,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer {
   background: #000;
-  padding: 0 0 30px 0;
+  /*padding: 0 0 30px 0;*/
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
   background: #111;
-  padding: 60px 0 30px 0;
+  padding: 40px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1496,7 +1496,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 
 #footer .credits {
